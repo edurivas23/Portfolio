@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Eduardo Rivas</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body>
+    
+   <header class="encabezado">
+    
+    <nav class="navegacion">
+     
+        <ul class="navegacion__lista">
+            <li class="navegacion__lista--item"><a href="#proyectos"><span class="material-symbols-outlined">business_center</span>Proyectos</a></li>
+            <li class="navegacion__lista--item"><a href="#formacion"><span class="material-symbols-outlined">School</span>Formación</a></li>
+            <li class="navegacion__lista--item"><a href="#skills"><span class="material-symbols-outlined">home</span>Skills</a></li>
+            <li class="navegacion__lista--item"><a href="#contacto"><span class="material-symbols-outlined">Call</span>Contacto</a></li>
+            <li class="navegacion__lista--item"><a href=""><strong> Curriculum Vitae </strong></a></li>
+        </ul>
+    </nav>
+
+   </header>
+
+    <main class="contenido"> 
+        <div class="presentacion">
+           <img src="./img/fotodeperfil.jpg" alt="Foto de perfil de Eduardo Rivas" class="foto_perfil"> 
+            <div class="presentacion__nombre">
+            <h1>Eduardo Giovanny Rivas Samayoa</h1>
+            <h2> Desarrollador Front-end. Entusiasta por ayudar a las personas en estar mas conectadas en el mundo de la tecnología.</h2>
+            </div>
+            </div>
+           <section class="sobre_mi">
+            <div class="parrafos">
+            <p>Hola, soy Eduardo Rivas nací el 5 de marzo de 2001 en Guatemala.
+                 Desde siempre, he tenido una fuerte inclinación hacia la tecnología y la innovación.
+                  Actualmente, soy estudiante en el programa Oracle Next Education junto con Alura,
+                   donde estoy desarrollando mis habilidades en programación, área en la que quiero especializarme y crecer profesionalmente. 
+                   Este programa me ha permitido combinar mi pasión por la tecnología con habilidades prácticas,
+                 preparándome para enfrentar desafíos y crear soluciones innovadoras.</p>
+
+            <p>Además de mi enfoque en la programación, tengo una variedad de intereses que enriquecen mi vida.
+                 Me apasionan los videojuegos, la lectura, la tecnología, la animación y el cine.
+                  Estas actividades no solo me entretienen,
+                   sino que también me inspiran y me ayudan a mantenerme actualizado con las tendencias actuales.
+                 A través de estas experiencias, encuentro inspiración y 
+                 motivación para seguir aprendiendo y creciendo en mis áreas de interés.</p>
+                </div>
+           </section> 
+           
+           <section class="proyectos" id="proyectos">    
+            <h2>Proyectos</h2> 
+            <div class="proyectos__container">
+                <article class="tarjeta__proyecto">
+                    <figure class="tarjeta_proyecto--presentacion">
+                        <img src="/img/encriptador.PNG" alt="Encriptador de texto">
+                        <figcaption class="tarjeta_proyecto--descripcion">Encriptador de texto que cambia vocales por palabras específicas utilizando condicionales y bucles,
+                             con interacción dinámica a través de botones y manipulación de elementos del DOM.</figcaption>
+                    </figure>
+                    <header class="tarjeta__titulo">
+                        <h1>Encriptador</h1>
+                    </header>  
+                    <main class="tarjeta__recursos">
+                        <span class="recurso__html">HTML</span>
+                        <span class="recurso__css">CSS</span>
+                        <span class="recurso__js">JavaScript</span>
+                    </main>
+                    <footer  class="links">
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 496 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 16 16" fill="none"><path fill="#000000" fill-rule="evenodd" d="M8 3.517a1 1 0 011.62-.784l5.348 4.233a1 1 0 010 1.568l-5.347 4.233A1 1 0 018 11.983v-1.545c-.76-.043-1.484.003-2.254.218-.994.279-2.118.857-3.506 1.99a.993.993 0 01-1.129.096.962.962 0 01-.445-1.099c.415-1.5 1.425-3.141 2.808-4.412C4.69 6.114 6.244 5.241 8 5.042V3.517zm1.5 1.034v1.2a.75.75 0 01-.75.75c-1.586 0-3.066.738-4.261 1.835a8.996 8.996 0 00-1.635 2.014c.878-.552 1.695-.916 2.488-1.138 1.247-.35 2.377-.33 3.49-.207a.75.75 0 01.668.745v1.2l4.042-3.2L9.5 4.55z" clip-rule="evenodd"/></svg>   </a>
+                        
+                    </footer>
+                </article>
+
+                <article  class="tarjeta__proyecto">
+                    <figure class="tarjeta_proyecto--presentacion">
+                        <img src="/img/cafeoslo.PNG" alt="Pagina web de un café">
+                        <figcaption class="tarjeta_proyecto--descripcion">Esta página web responsiva utiliza media queries y JavaScript para implementar un menú desplegable diseñado específicamente para mejorar la experiencia de los usuarios en dispositivos móviles.</figcaption>
+                    </figure>
+                    <header class="tarjeta__titulo">
+                        <h1>CaféOslo</h1>
+                    </header>
+                    <main class="tarjeta__recursos">
+                        <span class="recurso__html">HTML</span>
+                        <span class="recurso__css">CSS</span>
+                        <span class="recurso__js">JavaScript</span>
+                    </main>
+                    <footer class="links">
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 496 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 16 16" fill="none"><path fill="#000000" fill-rule="evenodd" d="M8 3.517a1 1 0 011.62-.784l5.348 4.233a1 1 0 010 1.568l-5.347 4.233A1 1 0 018 11.983v-1.545c-.76-.043-1.484.003-2.254.218-.994.279-2.118.857-3.506 1.99a.993.993 0 01-1.129.096.962.962 0 01-.445-1.099c.415-1.5 1.425-3.141 2.808-4.412C4.69 6.114 6.244 5.241 8 5.042V3.517zm1.5 1.034v1.2a.75.75 0 01-.75.75c-1.586 0-3.066.738-4.261 1.835a8.996 8.996 0 00-1.635 2.014c.878-.552 1.695-.916 2.488-1.138 1.247-.35 2.377-.33 3.49-.207a.75.75 0 01.668.745v1.2l4.042-3.2L9.5 4.55z" clip-rule="evenodd"/></svg></a>
+                        
+                    </footer>
+                </article>
+
+                <article  class="tarjeta__proyecto">
+                    <figure class="tarjeta_proyecto--presentacion">
+                        <img src="/img/Juego_secreto.PNG" alt="">
+                        <figcaption class="tarjeta_proyecto--descripcion">Creación de un juego interactivo en JavaScript que utiliza la manipulación del DOM para generar dinámicamente un número aleatorio y ofrecer una experiencia de adivinanza con retroalimentación visual.</figcaption>
+                    </figure>
+                    <header class="tarjeta__titulo">
+                        <h1>Juego Secreto</h1>
+                    </header>
+                    <main class="tarjeta__recursos">
+                        <span  class="recurso__html">HTML</span>
+                        <span class="recurso__css">CSS</span>
+                        <span class="recurso__js">JavaScript</span>
+                    </main>
+                    <footer class="links">
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 496 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 16 16" fill="none"><path fill="#000000" fill-rule="evenodd" d="M8 3.517a1 1 0 011.62-.784l5.348 4.233a1 1 0 010 1.568l-5.347 4.233A1 1 0 018 11.983v-1.545c-.76-.043-1.484.003-2.254.218-.994.279-2.118.857-3.506 1.99a.993.993 0 01-1.129.096.962.962 0 01-.445-1.099c.415-1.5 1.425-3.141 2.808-4.412C4.69 6.114 6.244 5.241 8 5.042V3.517zm1.5 1.034v1.2a.75.75 0 01-.75.75c-1.586 0-3.066.738-4.261 1.835a8.996 8.996 0 00-1.635 2.014c.878-.552 1.695-.916 2.488-1.138 1.247-.35 2.377-.33 3.49-.207a.75.75 0 01.668.745v1.2l4.042-3.2L9.5 4.55z" clip-rule="evenodd"/></svg></a>
+                        
+                    </footer>
+                </article>
+
+                <article  class="tarjeta__proyecto">
+                    <figure class="tarjeta_proyecto--presentacion">
+                        <img src="/img/jornada.PNG" alt="">
+                        <figcaption class="tarjeta_proyecto--descripcion">Jornada es una página web estática para una agencia de viajes ficticia, con secciones como blog, paquetes turísticos y contacto. Actualmente en desarrollo, planeo hacerla responsiva para mejorar la experiencia del usuario.</figcaption>
+                    </figure>
+                    <header class="tarjeta__titulo">
+                        <h1>Jornada</h1>
+                    </header>
+                    <main class="tarjeta__recursos">
+                        <span class="recurso__html">HTML</span>
+                        <span class="recurso__css">CSS</span>
+                        
+                    </main>
+                    <footer class="links">
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 496 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 16 16" fill="none"><path fill="#000000" fill-rule="evenodd" d="M8 3.517a1 1 0 011.62-.784l5.348 4.233a1 1 0 010 1.568l-5.347 4.233A1 1 0 018 11.983v-1.545c-.76-.043-1.484.003-2.254.218-.994.279-2.118.857-3.506 1.99a.993.993 0 01-1.129.096.962.962 0 01-.445-1.099c.415-1.5 1.425-3.141 2.808-4.412C4.69 6.114 6.244 5.241 8 5.042V3.517zm1.5 1.034v1.2a.75.75 0 01-.75.75c-1.586 0-3.066.738-4.261 1.835a8.996 8.996 0 00-1.635 2.014c.878-.552 1.695-.916 2.488-1.138 1.247-.35 2.377-.33 3.49-.207a.75.75 0 01.668.745v1.2l4.042-3.2L9.5 4.55z" clip-rule="evenodd"/></svg></a>
+                       
+                    </footer>
+                </article>
+            </div>
+        </section>
+
+        <section class="formacion" id="formacion">    
+            <h2>Formación</h2>  
+
+            <div class="certificacion__container" >
+                <article class="certificado" >
+                    <picture><img src="img/oracle.png" alt=""></a></picture>
+                    <h1> Principiante en Programación-ONE</h1>
+                    <time>19 de junio del 2024 - 17 de agosto del 2024</time>
+                    <a class="certificado__link" href="/">Ver certificado</a>
+                </article>
+
+                <article class="certificado">
+                    <picture><img src="img/usac.png" alt=""></a></picture>
+                    <h1>Ingeniería Industrial</h1>
+                    <time> 21 de Enero 2019 - No concluido</time>
+                    <span class="certificado__link" tabindex="-1000">No disponible</span>
+                </article>
+
+            </div>
+            
+        </section>
+
+        <section class="skills" id="skills">
+            <h2>Skills</h2>
+            <ul class="skills__container">
+                <li class="logo__descripcion"><img src="img/html.png" alt=""><span>HTML</span></li>
+                <li class="logo__descripcion"><img src="img/css.png"  alt=""><span>CSS</span></li>
+                <li class="logo__descripcion"><img src="img/JavaScript-logo.png" alt=""><span>JavaScript</span></li>
+                <li class="logo__descripcion"><img src="img/figma.png" alt=""><span>Figma</span></li>
+                <li class="logo__descripcion"><img src="img/git.png" alt=""><span>GIT</span></li>
+                <li class="logo__descripcion"><img src="img/github.png" alt=""><span>GitHub</span></li>
+                <li class="logo__descripcion"><img src="img/react.png" alt=""><span>React</span></li>
+                <li class="logo__descripcion"><img src="img/nodejs.png" alt=""><span>Node Js</span></li>
+                <li class="logo__descripcion"><img src="img/SQL.png" alt=""><span>SQL</span></li>
+                
+        </ul>
+        </section>
+      
+        <section class="contacto" id="contacto">  
+
+            <h2>Contacto</h2> 
+            <div class="contacto__container">
+                <img src="/img/fondo-formulario.jpg" alt="">
+            <form id="formulario" action="https://formsubmit.co/edu.samayoa1@gmail.com" method="POST">
+               
+                <input  type="text" name="name" id="name" placeholder="Nombre" required/>
+                <input type="Email" name="mail" id="mail" placeholder="Email" required/ >
+                <label for="asunto">Asunto:</label>
+                <textarea name="asunto" id="asunto" placeholder="Escriba el mensaje" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"></textarea>
+                <input id="boton" type="submit" value="Enviar"/>
+                <input type="hidden" name="_next" value="">
+                <input type="hidden" name="_captcha" value="false"> 
+
+            </form>
+            </div>
+        </section>
+    </main>
+    <footer class="redes" >
+        <div class="redes__container">
+            
+            <ul class="lista__redes">
+                <li><a href="https://github.com/edurivas23"><svg xmlns="http://www.w3.org/2000/svg"  height="40" width="40"viewBox="0 0 496 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#76ABAE" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a> </li>
+                <li><a href="https://www.linkedin.com/in/eduardo-rivas-dev/"><svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" viewBox="0 0 496 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#76ABAE" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a></li>
+                <li><a href="mailto:edu.samayoa1@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 16 16" id="Instagram"  height="40" width="40">
+                    <linearGradient id="a" x1="1.464" x2="14.536" y1="14.536" y2="1.464" gradientUnits="userSpaceOnUse">
+                      <stop offset="0" stop-color="#76ABAE" class="stopColorffc107 svgShape"></stop>
+                      <stop offset=".507" stop-color="#76ABAE" class="stopColorf44336 svgShape"></stop>
+                      <stop offset=".99" stop-color="#76ABAE" class="stopColor9c27b0 svgShape"></stop>
+                    </linearGradient>
+                    <path fill="#76ABAE" d="M11 0H5a5 5 0 0 0-5 5v6a5 5 0 0 0 5 5h6a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zm3.5 11c0 1.93-1.57 3.5-3.5 3.5H5c-1.93 0-3.5-1.57-3.5-3.5V5c0-1.93 1.57-3.5 3.5-3.5h6c1.93 0 3.5 1.57 3.5 3.5v6z"></path>
+                    <linearGradient id="b" x1="5.172" x2="10.828" y1="10.828" y2="5.172" gradientUnits="userSpaceOnUse">
+                      <stop offset="0" stop-color="#76ABAE" class="stopColorffc107 svgShape"></stop>
+                      <stop offset=".507" stop-color="#76ABAE" class="stopColorf44336 svgShape"></stop>
+                      <stop offset=".99" stop-color="#76ABAE" class="stopColor9c27b0 svgShape"></stop>
+                    </linearGradient>
+                    <path fill="#76ABAE" d="M8 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm0 6.5A2.503 2.503 0 0 1 5.5 8c0-1.379 1.122-2.5 2.5-2.5s2.5 1.121 2.5 2.5c0 1.378-1.122 2.5-2.5 2.5z"></path>
+                    <linearGradient id="c" x1="11.923" x2="12.677" y1="4.077" y2="3.323" gradientUnits="userSpaceOnUse">
+                      <stop offset="0" stop-color="#76ABAE" class="stopColorffc107 svgShape"></stop>
+                      <stop offset=".507" stop-color="#76ABAE" class="stopColorf44336 svgShape"></stop>
+                      <stop offset=".99" stop-color="#76ABAE" class="stopColor9c27b0 svgShape"></stop>
+                    </linearGradient>
+                    <circle cx="12.3" cy="3.7" r=".533" fill="url(#c)"></circle>
+                  </svg></a></li>
+        </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
