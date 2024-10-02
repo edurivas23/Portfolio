@@ -55,7 +55,7 @@ h2 {
 .navegacion {
     position: fixed;
     width: 200px;
-    left: 50px;
+    left: 10px;
 
 
 }
@@ -518,7 +518,7 @@ h2 {
 
 .redes__container {
     position: fixed;
-    right: 50px;
+    right: 10px;
     bottom: 0;
 }
 
@@ -541,7 +541,7 @@ h2 {
 
 
 
-@media (max-width:1700px) {
+@media (max-width:1650px) {
     .encabezado {
         position: sticky;
         top: 0;
