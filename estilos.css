@@ -136,7 +136,7 @@ h2 {
 }
 
 .foto_perfil {
-    height: 35vh;
+    height: 35dvh;
     aspect-ratio: 1/1;
     border-radius: 50%;
     border: 5px SOLID #7EACB5;
