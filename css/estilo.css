@@ -3,6 +3,7 @@ body{
     display: flex;
     flex-direction: column;
    gap: 100px;
+   width: 100%;
 }
 
 /* Barra de navegación */
