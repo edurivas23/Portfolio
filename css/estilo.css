@@ -9,25 +9,28 @@ body{
 .navegacion{
     
    background-color:  var(--color-letra);
-    padding: 20px;
-    ;
+    padding: 20px 0;
+    
 }
 
 .menu{
+    
     display: flex;
     justify-content: center;
     gap: 50px;
     list-style: none;
     font-size: 24px;
-   
+    
 }
 .menu-item{
     transition: 0.2s ease-out;
+  
 }
 .menu-item a {
     text-decoration: none;
     color: white;
     cursor: pointer;
+    text-wrap: nowrap;
    
 }
 .menu-item:hover{
@@ -419,5 +422,16 @@ footer{
 
     .Certificaciones{
         grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+    .menu{
+       
+        font-size: 18px;
+        min-width: 420px;
+        gap:20px
+        
+    }
+    .nombre-pie_pagina{
+        text-wrap: pretty;
+        gap: 20px;
     }
 }
