@@ -10,7 +10,7 @@ body{
     
    background-color:  var(--color-letra);
     padding: 20px 0;
-    
+    width: 100%;
 }
 
 .menu{
@@ -382,6 +382,7 @@ font-size: 14px;
 footer{
     background-color: var(--color-letra);
     padding: 50px;
+    width: 100%;
 }
 .nombre-pie_pagina{
     display: flex;
