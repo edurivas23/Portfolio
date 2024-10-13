@@ -405,3 +405,16 @@ footer{
     transform: scale(1.1);
 }
 
+@media (max-width:1200px) {
+    .tarjeta_proyecto_container{
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+
+}
+
+@media (max-width:750px) {
+    .tarjeta_proyecto_container{
+        grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+
+}
