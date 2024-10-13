@@ -1,233 +1,210 @@
 <!DOCTYPE html>
-<html lang="es">
+<HTML lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Portafolio de un desarrollador Front-End en formación, con proyectos que demuestran habilidades en HTML, CSS y JavaScript. Incluye páginas estáticas y en constante evolución hacia un diseño responsivo.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Eduardo Rivas</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="reset.css">
+    <meta name="description" content="Portafolio de un desarrollador Front-End en formación, con proyectos que demuestran habilidades en HTML,
+     CSS y JavaScript. Incluye páginas estáticas y en constante evolución hacia un diseño responsivo.">
+    <title>Portafolio Eduardo Rivas</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="icon" href="img/icons8-satoru-gojo-48.png" type="imagen/png">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Protest+Strike&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="imagenes/icons8-satoru-gojo-48.png" type="imagen/png">
 </head>
 <body>
-    
-   <header class="encabezado">
-    
-    <nav class="navegacion">
-     
-        <ul class="navegacion__lista">
-            <li class="navegacion__lista--item"><a href="#proyectos"><span class="material-symbols-outlined">business_center</span>Proyectos</a></li>
-            <li class="navegacion__lista--item"><a href="#formacion"><span class="material-symbols-outlined">School</span>Formación</a></li>
-            <li class="navegacion__lista--item"><a href="#skills"><span class="material-symbols-outlined">home</span>Skills</a></li>
-            <li class="navegacion__lista--item"><a href="#contacto"><span class="material-symbols-outlined">Call</span>Contacto</a></li>
-            <li class="navegacion__lista--item"><a href="#"><strong> Curriculum Vitae </strong></a></li>
-        </ul>
-    </nav>
-
-   </header>
-
-    <main class="contenido"> 
-        <div class="presentacion">
-           <img src="./img/fotodeperfil.jpg" alt="Foto de perfil de Eduardo Rivas" class="foto_perfil"> 
-            <div class="presentacion__nombre">
+    <header>
+        <nav class="navegacion">
+            <ul class="menu">
+                <li class= "menu-item"><a href="#sobre_mi">Sobre mi</a></li>
+                <li class= "menu-item"><a href="#proyectos">Proyectos</a></li>
+                <li class= "menu-item"><a href="#formacion">Formación</a></li>
+                <li class= "menu-item"><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <section class="presentacion">
+        <div class="nombre_profesion">
             <h1>Eduardo Giovanny Rivas Samayoa</h1>
-            <h2> Desarrollador Front-end. Entusiasta por ayudar a las personas en estar mas conectadas en el mundo de la tecnología.</h2>
+            <h2><strong>Desarrollador Front-End.</strong><br> Visita mi currículum <a>aquí.</a> </h2>
+            <div class="redes-trabajo">
+                <a href="https://github.com/edurivas23"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="35" height="35"><path fill="#00c896" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
+                <a href="https://www.linkedin.com/in/eduardo-rivas-dev/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="35" height="35"><path fill="#00c896" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+                <a href="https://www.instagram.com/edu_sama0/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="35" height="35"><path fill="#00c896" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
             </div>
-            </div>
-           <section class="sobre_mi">
-            <div class="parrafos">
-            <p>Hola, soy Eduardo Rivas nací el 5 de marzo de 2001 en Guatemala.
-                 Desde siempre, he tenido una fuerte inclinación hacia la tecnología y la innovación.
-                  Actualmente, soy estudiante en el programa Oracle Next Education junto con Alura,
-                   donde estoy desarrollando mis habilidades en programación, área en la que quiero especializarme y crecer profesionalmente. 
-                   Este programa me ha permitido combinar mi pasión por la tecnología con habilidades prácticas,
-                 preparándome para enfrentar desafíos y crear soluciones innovadoras.</p>
+        </div>
+        <div class="perfil-image">
+            <img src="/imagenes/fotodeperfil.jpg" alt="foto de Eduardo Giovanny Rivas Samayoa tomada de frente">
+        </div>
+    </section>
+    <section class="sobre_mi" id="sobre_mi">
+        <h3>Sobre Mi</h3>
+        <p> Hola, soy Eduardo Rivas nací el 5 de marzo de 2001 en Guatemala.
+            Desde siempre, he tenido una fuerte inclinación hacia la tecnología y la innovación.
+            Actualmente, soy estudiante en el programa Oracle Next Education junto con Alura,
+            donde estoy desarrollando mis habilidades en programación, área en la que quiero especializarme y crecer profesionalmente. 
+            Este programa me ha permitido combinar mi pasión por la tecnología con habilidades prácticas,
+            preparándome para enfrentar desafíos y crear soluciones innovadoras.</p>
 
             <p>Además de mi enfoque en la programación, tengo una variedad de intereses que enriquecen mi vida.
-                 Me apasionan los videojuegos, la lectura, la tecnología, la animación y el cine.
-                  Estas actividades no solo me entretienen,
-                   sino que también me inspiran y me ayudan a mantenerme actualizado con las tendencias actuales.
-                 A través de estas experiencias, encuentro inspiración y 
-                 motivación para seguir aprendiendo y creciendo en mis áreas de interés.</p>
-                </div>
-           </section> 
-           
-           <section class="proyectos" id="proyectos">    
-            <h2>Proyectos</h2> 
-            <div class="proyectos__container">
-                <article class="tarjeta__proyecto">
-                    <figure class="tarjeta_proyecto--presentacion">
-                        <img src="/img/encriptador.PNG" alt="Encriptador de texto">
-                        <figcaption class="tarjeta_proyecto--descripcion">Encriptador de texto que cambia vocales por palabras específicas utilizando condicionales y bucles,
-                             con interacción dinámica a través de botones y manipulación de elementos del DOM.</figcaption>
-                    </figure>
-                    <header class="tarjeta__titulo">
-                        <h1>Encriptador</h1>
-                    </header>  
-                    <main class="tarjeta__recursos">
-                        <span class="recurso__html">HTML</span>
-                        <span class="recurso__css">CSS</span>
-                        <span class="recurso__js">JavaScript</span>
-                    </main>
-                    <footer  class="links">
-                        <a href="https://github.com/edurivas23/encriptador"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 496 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
-                        <a href="https://edurivas23.github.io/encriptador/"><svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 16 16" fill="none"><path fill="#000000" fill-rule="evenodd" d="M8 3.517a1 1 0 011.62-.784l5.348 4.233a1 1 0 010 1.568l-5.347 4.233A1 1 0 018 11.983v-1.545c-.76-.043-1.484.003-2.254.218-.994.279-2.118.857-3.506 1.99a.993.993 0 01-1.129.096.962.962 0 01-.445-1.099c.415-1.5 1.425-3.141 2.808-4.412C4.69 6.114 6.244 5.241 8 5.042V3.517zm1.5 1.034v1.2a.75.75 0 01-.75.75c-1.586 0-3.066.738-4.261 1.835a8.996 8.996 0 00-1.635 2.014c.878-.552 1.695-.916 2.488-1.138 1.247-.35 2.377-.33 3.49-.207a.75.75 0 01.668.745v1.2l4.042-3.2L9.5 4.55z" clip-rule="evenodd"/></svg>   </a>
-                        
-                    </footer>
+                Me apasionan los videojuegos, la lectura, la tecnología, la animación y el cine.
+                 Estas actividades no solo me entretienen,
+                  sino que también me inspiran y me ayudan a mantenerme actualizado con las tendencias actuales.
+                A través de estas experiencias, encuentro inspiración y 
+                motivación para seguir aprendiendo y creciendo en mis áreas de interés.</p>
+
+                <h4>Habilidades:</h4>
+               <ul class="habilidades-lista">
+                <li class="habilidades-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" /></li>
+                <li class="habilidades-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" /></li>
+                <li class="habilidades-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" /></li>
+                <li class="habilidades-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" /></li>
+                <li class="habilidades-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" /></li>
+                <li class="habilidades-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" /></li>
+               </ul>
+        </section >  
+       
+        <section class="proyectos" id="proyectos">
+            <h3>Proyectos</h3>
+            <div class="tarjeta_proyecto_container">
+
+                <article class="tarjeta_proyecto">
+                    <div class="tarjeta_proyecto-repo_view">
+                        <a href="https://github.com/edurivas23/encriptador">Repositorio</a>
+                        <a href="https://encriptador-lna0voz56-edurivas23s-projects.vercel.app">Ver página</a>
+                    </div>
+                    <div class="tarjeta_proyecto-descripcion">
+                        <h4>Encriptador</h4>
+                        <p>Encriptador de texto que cambia vocales por palabras específicas utilizando condicionales y bucles,
+                            con interacción dinámica a través de botones y manipulación de elementos del DOM.</p>
+                            <img src="/imagenes/encriptador.PNG">
+                           
+                    </div>
+                    <div class="tarjeta_proyecto-recursos">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
                 </article>
 
-                <article  class="tarjeta__proyecto">
-                    <figure class="tarjeta_proyecto--presentacion">
-                        <img src="/img/cafeoslo.PNG" alt="Pagina web de un café">
-                        <figcaption class="tarjeta_proyecto--descripcion">Esta página web responsiva utiliza media queries y JavaScript para implementar un menú desplegable diseñado específicamente para mejorar la experiencia de los usuarios en dispositivos móviles.</figcaption>
-                    </figure>
-                    <header class="tarjeta__titulo">
-                        <h1>CaféOslo</h1>
-                    </header>
-                    <main class="tarjeta__recursos">
-                        <span class="recurso__html">HTML</span>
-                        <span class="recurso__css">CSS</span>
-                        <span class="recurso__js">JavaScript</span>
-                    </main>
-                    <footer class="links">
-                        <a href="https://github.com/edurivas23/cafeOslo"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 496 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
-                        <a href="https://edurivas23.github.io/cafeOslo/"><svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 16 16" fill="none"><path fill="#000000" fill-rule="evenodd" d="M8 3.517a1 1 0 011.62-.784l5.348 4.233a1 1 0 010 1.568l-5.347 4.233A1 1 0 018 11.983v-1.545c-.76-.043-1.484.003-2.254.218-.994.279-2.118.857-3.506 1.99a.993.993 0 01-1.129.096.962.962 0 01-.445-1.099c.415-1.5 1.425-3.141 2.808-4.412C4.69 6.114 6.244 5.241 8 5.042V3.517zm1.5 1.034v1.2a.75.75 0 01-.75.75c-1.586 0-3.066.738-4.261 1.835a8.996 8.996 0 00-1.635 2.014c.878-.552 1.695-.916 2.488-1.138 1.247-.35 2.377-.33 3.49-.207a.75.75 0 01.668.745v1.2l4.042-3.2L9.5 4.55z" clip-rule="evenodd"/></svg></a>
-                        
-                    </footer>
+                <article class="tarjeta_proyecto">
+                    <div class="tarjeta_proyecto-repo_view">
+                        <a href="https://github.com/edurivas23/cafeOslo">Repositorio</a>
+                        <a href="https://edurivas23.github.io/cafeOslo/">Ver página</a>
+                    </div>
+                    <div class="tarjeta_proyecto-descripcion">
+                        <h4>CafeOslo</h4>
+                        <p>Esta página web responsiva utiliza media queries y
+                            JavaScript para implementar un menú desplegable diseñado específicamente
+                            para mejorar la experiencia de los usuarios en dispositivos móviles.</p>
+                            <img src="/imagenes/cafeoslo.PNG">
+
+                    </div>
+                    <div class="tarjeta_proyecto-recursos">
+                        <span >HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
                 </article>
 
-                <article  class="tarjeta__proyecto">
-                    <figure class="tarjeta_proyecto--presentacion">
-                        <img src="/img/Juego_secreto.PNG" alt="">
-                        <figcaption class="tarjeta_proyecto--descripcion">Creación de un juego interactivo en JavaScript que utiliza la manipulación del DOM para generar dinámicamente un número aleatorio y ofrecer una experiencia de adivinanza con retroalimentación visual.</figcaption>
-                    </figure>
-                    <header class="tarjeta__titulo">
-                        <h1>Juego Secreto</h1>
-                    </header>
-                    <main class="tarjeta__recursos">
-                        <span  class="recurso__html">HTML</span>
-                        <span class="recurso__css">CSS</span>
-                        <span class="recurso__js">JavaScript</span>
-                    </main>
-                    <footer class="links">
-                        <a href="https://github.com/edurivas23/juegoSecreto-Alura"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 496 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
-                        <a href="https://edurivas23.github.io/juegoSecreto-Alura/"><svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 16 16" fill="none"><path fill="#000000" fill-rule="evenodd" d="M8 3.517a1 1 0 011.62-.784l5.348 4.233a1 1 0 010 1.568l-5.347 4.233A1 1 0 018 11.983v-1.545c-.76-.043-1.484.003-2.254.218-.994.279-2.118.857-3.506 1.99a.993.993 0 01-1.129.096.962.962 0 01-.445-1.099c.415-1.5 1.425-3.141 2.808-4.412C4.69 6.114 6.244 5.241 8 5.042V3.517zm1.5 1.034v1.2a.75.75 0 01-.75.75c-1.586 0-3.066.738-4.261 1.835a8.996 8.996 0 00-1.635 2.014c.878-.552 1.695-.916 2.488-1.138 1.247-.35 2.377-.33 3.49-.207a.75.75 0 01.668.745v1.2l4.042-3.2L9.5 4.55z" clip-rule="evenodd"/></svg></a>
-                        
-                    </footer>
-                </article>
-
-                <article  class="tarjeta__proyecto">
-                    <figure class="tarjeta_proyecto--presentacion">
-                        <img src="/img/jornada.PNG" alt="">
-                        <figcaption class="tarjeta_proyecto--descripcion">Jornada es una página web estática para una agencia de viajes ficticia, con secciones como blog, paquetes turísticos y contacto. Actualmente en desarrollo, planeo hacerla responsiva para mejorar la experiencia del usuario.</figcaption>
-                    </figure>
-                    <header class="tarjeta__titulo">
-                        <h1>Jornada</h1>
-                    </header>
-                    <main class="tarjeta__recursos">
-                        <span class="recurso__html">HTML</span>
-                        <span class="recurso__css">CSS</span>
-                        
-                    </main>
-                    <footer class="links">
-                        <a href="https://github.com/edurivas23/jornada"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 496 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
-                        <a href="https://edurivas23.github.io/jornada/"><svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 16 16" fill="none"><path fill="#000000" fill-rule="evenodd" d="M8 3.517a1 1 0 011.62-.784l5.348 4.233a1 1 0 010 1.568l-5.347 4.233A1 1 0 018 11.983v-1.545c-.76-.043-1.484.003-2.254.218-.994.279-2.118.857-3.506 1.99a.993.993 0 01-1.129.096.962.962 0 01-.445-1.099c.415-1.5 1.425-3.141 2.808-4.412C4.69 6.114 6.244 5.241 8 5.042V3.517zm1.5 1.034v1.2a.75.75 0 01-.75.75c-1.586 0-3.066.738-4.261 1.835a8.996 8.996 0 00-1.635 2.014c.878-.552 1.695-.916 2.488-1.138 1.247-.35 2.377-.33 3.49-.207a.75.75 0 01.668.745v1.2l4.042-3.2L9.5 4.55z" clip-rule="evenodd"/></svg></a>
-                       
-                    </footer>
+                <article class="tarjeta_proyecto">
+                    <div class="tarjeta_proyecto-repo_view">
+                        <a href="https://github.com/edurivas23/juegoSecreto-Alura">Repositorio</a>
+                        <a href="https://edurivas23.github.io/juegoSecreto-Alura/">Ver página</a>
+                    </div>
+                    <div class="tarjeta_proyecto-descripcion">
+                        <h4>Juego Secreto</h4>
+                        <P>Creación de un juego interactivo en JavaScript que utiliza la manipulación del DOM 
+                            para generar dinámicamente un número aleatorio y
+                            ofrecer una experiencia de adivinanza con retroalimentación visual.</P>
+                            <img src="/imagenes/Juego_secreto.PNG">
+                      
+                    </div>
+                    <div class="tarjeta_proyecto-recursos">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
                 </article>
             </div>
-        </section>
+    </section>
+    <section class="formacion" id="formacion">
+        <h3>Certificaciones</h3>
+        <div class="Certificaciones">
+            <figure class="certificado_descripcion">
+                <img src="/imagenes/Certificado_principiante.PNG" alt="certificado de Eduardo Giovanny Rivas Samayoa en Principiante en programación">
+                <figcaption>Principiante en programación - ONE </figcaption>
+            </figure>
 
-        <section class="formacion" id="formacion">    
-            <h2>Formación</h2>  
-
-            <div class="certificacion__container" >
-                <article class="certificado" >
-                    <picture><img src="img/oracle.png" alt=""></a></picture>
-                    <h1> Principiante en Programación-ONE</h1>
-                    <time>19 de junio del 2024 - 17 de agosto del 2024</time>
-                    <a class="certificado__link" href="/">Ver certificado</a>
-                </article>
-
-                <article class="certificado">
-                    <picture><img src="img/usac.png" alt=""></a></picture>
-                    <h1>Ingeniería Industrial</h1>
-                    <time> 21 de Enero 2019 - No concluido</time>
-                    <span class="certificado__link" tabindex="-1000">No disponible</span>
-                </article>
-
-            </div>
-            
-        </section>
-
-        <section class="skills" id="skills">
-            <h2>Skills</h2>
-            <ul class="skills__container">
-                <li class="logo__descripcion"><img src="img/html.png" alt=""><span>HTML</span></li>
-                <li class="logo__descripcion"><img src="img/css.png"  alt=""><span>CSS</span></li>
-                <li class="logo__descripcion"><img src="img/JavaScript-logo.png" alt=""><span>JavaScript</span></li>
-                <li class="logo__descripcion"><img src="img/figma.png" alt=""><span>Figma</span></li>
-                <li class="logo__descripcion"><img src="img/git.png" alt=""><span>GIT</span></li>
-                <li class="logo__descripcion"><img src="img/github.png" alt=""><span>GitHub</span></li>
-                <li class="logo__descripcion"><img src="img/react.png" alt=""><span>React</span></li>
-                <li class="logo__descripcion"><img src="img/nodejs.png" alt=""><span>Node Js</span></li>
-                <li class="logo__descripcion"><img src="img/SQL.png" alt=""><span>SQL</span></li>
-                
-        </ul>
-        </section>
-      
-        <section class="contacto" id="contacto">  
-
-            <h2>Contacto</h2> 
-            <div class="contacto__container">
-                <img src="/img/fondo-formulario.jpg" alt="">
-            <form id="formulario" action="https://formsubmit.co/edu.samayoa1@gmail.com" method="POST">
-               
-                <input  type="text" name="name" id="name" placeholder="Nombre" required/>
-                <input type="Email" name="mail" id="mail" placeholder="Email" required/ >
-                <label for="asunto">Asunto:</label>
-                <textarea name="asunto" id="asunto" placeholder="Escriba el mensaje" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"></textarea>
-                <input id="boton" type="submit" value="Enviar"/>
-                <input type="hidden" name="_next" value="https://edurivas.vercel.app">
-                <input type="hidden" name="_captcha" value="false"> 
-
-            </form>
-            </div>
-        </section>
-    </main>
-    <footer class="redes" >
-        <div class="redes__container">
-            
-            <ul class="lista__redes">
-                <li><a href="https://github.com/edurivas23"><svg xmlns="http://www.w3.org/2000/svg"  height="40" width="40"viewBox="0 0 496 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#76ABAE" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a> </li>
-                <li><a href="https://www.linkedin.com/in/eduardo-rivas-dev/"><svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" viewBox="0 0 496 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#76ABAE" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a></li>
-                <li><a href="mailto:edu.samayoa1@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 16 16" id="Instagram"  height="40" width="40">
-                    <linearGradient id="a" x1="1.464" x2="14.536" y1="14.536" y2="1.464" gradientUnits="userSpaceOnUse">
-                      <stop offset="0" stop-color="#76ABAE" class="stopColorffc107 svgShape"></stop>
-                      <stop offset=".507" stop-color="#76ABAE" class="stopColorf44336 svgShape"></stop>
-                      <stop offset=".99" stop-color="#76ABAE" class="stopColor9c27b0 svgShape"></stop>
-                    </linearGradient>
-                    <path fill="#76ABAE" d="M11 0H5a5 5 0 0 0-5 5v6a5 5 0 0 0 5 5h6a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zm3.5 11c0 1.93-1.57 3.5-3.5 3.5H5c-1.93 0-3.5-1.57-3.5-3.5V5c0-1.93 1.57-3.5 3.5-3.5h6c1.93 0 3.5 1.57 3.5 3.5v6z"></path>
-                    <linearGradient id="b" x1="5.172" x2="10.828" y1="10.828" y2="5.172" gradientUnits="userSpaceOnUse">
-                      <stop offset="0" stop-color="#76ABAE" class="stopColorffc107 svgShape"></stop>
-                      <stop offset=".507" stop-color="#76ABAE" class="stopColorf44336 svgShape"></stop>
-                      <stop offset=".99" stop-color="#76ABAE" class="stopColor9c27b0 svgShape"></stop>
-                    </linearGradient>
-                    <path fill="#76ABAE" d="M8 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm0 6.5A2.503 2.503 0 0 1 5.5 8c0-1.379 1.122-2.5 2.5-2.5s2.5 1.121 2.5 2.5c0 1.378-1.122 2.5-2.5 2.5z"></path>
-                    <linearGradient id="c" x1="11.923" x2="12.677" y1="4.077" y2="3.323" gradientUnits="userSpaceOnUse">
-                      <stop offset="0" stop-color="#76ABAE" class="stopColorffc107 svgShape"></stop>
-                      <stop offset=".507" stop-color="#76ABAE" class="stopColorf44336 svgShape"></stop>
-                      <stop offset=".99" stop-color="#76ABAE" class="stopColor9c27b0 svgShape"></stop>
-                    </linearGradient>
-                    <circle cx="12.3" cy="3.7" r=".533" fill="url(#c)"></circle>
-                  </svg></a></li>
-        </ul>
+            <figure class="certificado_descripcion" alt="certificado de Eduardo Giovanny Rivas Samayoa en Logica de programacion con JavaScript">
+                <img src="/imagenes/certificado_logicadeprogramacion.PNG">
+                <figcaption>Logica de programación con JavaScript - ONE </figcaption>
+            </figure>
         </div>
-    </footer>
+    </section>
 
+    <section class="contacto" id="contacto">
+        
+        <div class="info_personal">
+            <h4>Información de contacto</h4>
+            <div class="info_container">
+                <span class="material-icons icon" 
+                style="color:#fff; 
+                font-size: 42px;
+                padding:10px;
+                border-radius: 50%;
+                background-color: var(--color-bordes);">mail</span>
+
+                <div class="info">
+                    <h6>Email</h6>
+                    <p>edu.samayoa1@gmail.com</p>
+                </div>
+            </div>
+            <div class="info_container">
+                <span class="material-icons icon"       
+                style="color:#fff; 
+                font-size: 42px;
+                padding:10px;
+                border-radius: 50%;
+                background-color: var(--color-bordes);">phone_iphone</span>
+
+                <div class="info">
+                    <h6>Teléfono</h6>
+                    <p>+502 3030-7742</p>
+                </div>
+            </div>
+            <div class="info_container">
+                                                    
+                <span class="material-icons icon" 
+                style="color:#fff; 
+                font-size: 42px;
+                padding:10px;
+                border-radius: 50%;
+                background-color: var(--color-bordes);">info</span>
+
+                <div class="info">
+                    <p>Actualmente, estoy buscando nuevas oportunidades de trabajo y 
+                        proyectos freelance en el campo del desarrollo web. 
+                        Estoy disponible para colaborar en proyectos a tiempo parcial y completo, 
+                        y tengo la flexibilidad necesaria para adaptarme a diferentes horarios y requisitos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="nombre-pie_pagina"><p>Eduardo Giovanny Rivas Samayoa</p>
+  <ul class="redes-adicionales"> 
+    <li class="redes-adicionales-item"><a href="https://github.com/edurivas23"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="35" height="35"><path fill="#00c896" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a></li>
+    <li class="redes-adicionales-item"><a href="https://x.com/PRINDZ1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="35" height="35"> <path fill="#00c896" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></a></li>
+    <li class="redes-adicionales-item"><a href="https://discord.com/users/274284971986911232"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="35" height="35"><path  fill="#00c896"d="M524.5 69.8a1.5 1.5 0 0 0 -.8-.7A485.1 485.1 0 0 0 404.1 32a1.8 1.8 0 0 0 -1.9 .9 337.5 337.5 0 0 0 -14.9 30.6 447.8 447.8 0 0 0 -134.4 0 309.5 309.5 0 0 0 -15.1-30.6 1.9 1.9 0 0 0 -1.9-.9A483.7 483.7 0 0 0 116.1 69.1a1.7 1.7 0 0 0 -.8 .7C39.1 183.7 18.2 294.7 28.4 404.4a2 2 0 0 0 .8 1.4A487.7 487.7 0 0 0 176 479.9a1.9 1.9 0 0 0 2.1-.7A348.2 348.2 0 0 0 208.1 430.4a1.9 1.9 0 0 0 -1-2.6 321.2 321.2 0 0 1 -45.9-21.9 1.9 1.9 0 0 1 -.2-3.1c3.1-2.3 6.2-4.7 9.1-7.1a1.8 1.8 0 0 1 1.9-.3c96.2 43.9 200.4 43.9 295.5 0a1.8 1.8 0 0 1 1.9 .2c2.9 2.4 6 4.9 9.1 7.2a1.9 1.9 0 0 1 -.2 3.1 301.4 301.4 0 0 1 -45.9 21.8 1.9 1.9 0 0 0 -1 2.6 391.1 391.1 0 0 0 30 48.8 1.9 1.9 0 0 0 2.1 .7A486 486 0 0 0 610.7 405.7a1.9 1.9 0 0 0 .8-1.4C623.7 277.6 590.9 167.5 524.5 69.8zM222.5 337.6c-29 0-52.8-26.6-52.8-59.2S193.1 219.1 222.5 219.1c29.7 0 53.3 26.8 52.8 59.2C275.3 311 251.9 337.6 222.5 337.6zm195.4 0c-29 0-52.8-26.6-52.8-59.2S388.4 219.1 417.9 219.1c29.7 0 53.3 26.8 52.8 59.2C470.7 311 447.5 337.6 417.9 337.6z"/></svg></a></li>
+  </ul>
+</div>
+</footer>
+<script src="main.js" defer></script>
 </body>
 </html>

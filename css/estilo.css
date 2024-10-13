@@ -1,0 +1,407 @@
+body{
+    background-color: var(--color-primario);
+    display: flex;
+    flex-direction: column;
+   gap: 100px;
+}
+
+/* Barra de navegación */
+.navegacion{
+    
+   background-color:  var(--color-letra);
+    padding: 20px;
+    ;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+    font-size: 24px;
+   
+}
+.menu-item{
+    transition: 0.2s ease-out;
+}
+.menu-item a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+   
+}
+.menu-item:hover{
+    transform: scale(1.1);
+}
+
+/* Información Principal */
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap:200px;
+    margin: 0 auto;
+}
+
+.presentacion{
+    display: flex;
+   flex-direction: column-reverse;
+    max-width: 1200px;
+    gap: 30px;
+    
+    
+}
+.nombre_profesion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+   
+}
+.nombre_profesion h1{
+    font-family: "Protest Strike", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 56px;
+    text-wrap: balance;
+    text-align: center;
+    
+}
+.nombre_profesion h2{
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    text-wrap: pretty;
+  
+    color: var(--color-secundario);
+}
+
+.nombre_profesion h2 strong{
+    color: var(--color-secundario);
+    font-size: 32px;
+    font-style: italic;
+}
+
+.nombre_profesion h2 a{
+    cursor: pointer;
+    text-decoration: line-through;
+    
+}
+.perfil-image{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.perfil-image img{
+    max-width: 100%;
+    height: 400px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 25px solid var(--color-bordes);
+    box-shadow: 0 0 6px 4px grey;
+
+}
+
+.redes-trabajo{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+}
+.redes-trabajo a{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+}
+
+.redes-trabajo a:hover{
+   transform: scale(1.1);
+}
+
+.sobre_mi{
+    max-width: 1200px;
+    border: 10px solid var(--color-bordes);
+    padding:  40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    margin: 0 20px;
+    background-color:var(--fondo-skills);
+}
+
+.sobre_mi h3, h4{
+    font-family: "Protest Strike", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+  
+
+}
+.sobre_mi p{
+    line-height: 2;
+    font-size: 18px;
+    text-wrap: pretty;
+    color: var(--color-letra);
+}
+
+.habilidades-lista{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+
+.habilidades-item{
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+    border-radius: 10px;
+   
+ 
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.habilidades-item:hover{
+    background-color: #ceb4e7;   
+}
+
+.proyectos,
+.formacion,
+.contacto{
+    max-width:1200px;
+    margin: 0 20px;
+    
+}
+
+.proyectos h3,
+.formacion h3{
+    font-family:"Protest Strike", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    padding-left: 40px;
+
+
+}
+.tarjeta_proyecto_container{
+    display: grid;
+    grid-template-columns:repeat(3, minmax(0, 1fr));
+    gap: 60px;
+    margin: 60px 0;
+    
+    
+}
+
+.tarjeta_proyecto{
+    background-color: var(--color-letra);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.6);
+    
+}
+.tarjeta_proyecto:hover{
+    animation: rotacion 0.3s ;
+}
+@keyframes rotacion {
+    0%{
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(5deg);
+    }
+    75%{
+        transform: rotate(-5deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+    
+}
+.tarjeta_proyecto-repo_view{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+
+}
+
+.tarjeta_proyecto-repo_view a{
+    color:var(--color-bordes);
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.tarjeta_proyecto-descripcion{
+    line-height: 2;
+    text-wrap: pretty;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta_proyecto-descripcion h4{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.tarjeta_proyecto-descripcion p{
+    color:#E0E0E0;
+    opacity: 0.9;
+    font-weight: 200;
+font-size: 14px;
+    height: 130px;
+    
+}
+
+.tarjeta_proyecto-descripcion img{
+    width:100%; 
+    height: 200px;
+    border-radius: 15px;
+    
+}
+
+.tarjeta_proyecto-recursos{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px
+    
+}
+
+.tarjeta_proyecto-recursos span{
+    color: #fff;
+    border: 2px solid #fff;
+    padding:  0 10px;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+.tarjeta_proyecto-recursos span:nth-child(1){
+    border-color: rgb(227, 79, 38);
+}
+.tarjeta_proyecto-recursos span:nth-child(1):hover{
+    background-color:  rgb(227, 79, 38);
+    cursor: pointer;
+}
+.tarjeta_proyecto-recursos span:nth-child(2){
+    border-color: rgb(21, 114, 182);
+}
+.tarjeta_proyecto-recursos span:nth-child(2):hover{
+    background-color:  rgb(21, 114, 182);;
+    cursor: pointer;
+}
+.tarjeta_proyecto-recursos span:nth-child(3){
+    border-color: rgb(247, 223, 30);
+}
+.tarjeta_proyecto-recursos span:nth-child(3):hover{
+    background-color:  rgb(247, 223, 30);
+    color: var(--color-letra);
+    cursor: pointer;
+}
+
+.Certificaciones{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 50px;
+    margin: 60px 0;
+}
+.certificado_descripcion{
+    border-radius: 15px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.6);
+   background-color:var(--fondo-skills);
+   text-align: center;
+  
+   transition: 0.1s ease-in;
+}
+.certificado_descripcion:hover{
+    transform: scale(1.02);
+    
+}
+.certificado_descripcion img{
+    width:100%;
+    height: 350px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    
+}
+.certificado_descripcion figcaption{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 30px;
+}
+
+.info_personal{
+    margin: 60px 0;
+    background-color: var(--color-secundario);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,1);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+.info_personal h4{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: underline var(--color-bordes);
+}
+.info_container{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+ 
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+.info h6{
+    color:  var(--fondo-skills);
+    font-size: 16px;
+}
+
+.info p{
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+    text-wrap: pretty;
+}
+
+footer{
+    background-color: var(--color-letra);
+    padding: 50px;
+}
+.nombre-pie_pagina{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nombre-pie_pagina p{
+    color:#E0E0E0;
+    margin: 0;
+   
+}
+.redes-adicionales{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.redes-adicionales li a{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+}
+.redes-adicionales li a:hover{
+    transform: scale(1.1);
+}
+
