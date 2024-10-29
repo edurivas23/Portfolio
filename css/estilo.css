@@ -69,7 +69,7 @@ main{
     font-family: "Protest Strike", sans-serif;
   font-weight: 800;
   font-style: normal;
-  font-size: 56px;
+  font-size: 3.4rem;
     text-wrap: balance;
     text-align: center;
     
@@ -102,8 +102,8 @@ main{
 
 .perfil-image img{
     max-width: 100%;
-    height: 400px;
-    aspect-ratio: 1/1;
+    height: 350px;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
     border: 25px solid var(--color-bordes);
     box-shadow: 0 0 6px 4px grey;
@@ -127,8 +127,8 @@ main{
    transform: scale(1.1);
 }
 
-.sobre_mi{
-    max-width: 1200px;
+.sobre_mi_info{
+   
     border: 10px solid var(--color-bordes);
     padding:  40px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
@@ -173,6 +173,7 @@ main{
     background-color: #ceb4e7;   
 }
 
+.sobre_mi,
 .proyectos,
 .formacion,
 .contacto{
@@ -419,21 +420,35 @@ footer{
 }
 
 @media (max-width:750px) {
+    .nombre_profesion h1{
+        font-size: 48px;
+    }
+    
+    .perfil-image img{
+        margin: 10px;
+        height: 35vh;
+       ;
+    }
+
     .tarjeta_proyecto_container{
         grid-template-columns: repeat(1,minmax(0,1fr));
+        margin: 0 20px;
     }
 
     .Certificaciones{
         grid-template-columns: repeat(1,minmax(0,1fr));
+        margin: 0 20px;
     }
     .navegacion{
         min-width: 420px;
     }
     .menu{
-       
-        font-size: 18px;
+        font-size: 16px;
         gap:20px
         
+    }
+    footer{
+        min-width: 400px;
     }
     .nombre-pie_pagina{
         text-wrap: pretty;
