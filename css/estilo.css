@@ -426,10 +426,12 @@ footer{
     .Certificaciones{
         grid-template-columns: repeat(1,minmax(0,1fr));
     }
+    .navegacion{
+        min-width: 420px;
+    }
     .menu{
        
         font-size: 18px;
-        min-width: 420px;
         gap:20px
         
     }
